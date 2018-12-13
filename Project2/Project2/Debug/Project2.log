@@ -1,0 +1,34 @@
+﻿  board.cpp
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\unordered_map(133): error C2280: "std::hash<_Kty>::hash(const std::hash<_Kty> &)": предпринята попытка ссылки на удаленную функцию
+          with
+          [
+              _Kty=pos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\type_traits(2440): note: в этом месте создано компилятором: "std::hash<_Kty>::hash"
+          with
+          [
+              _Kty=pos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\type_traits(2440): note: "std::hash<_Kty>::hash(const std::hash<_Kty> &)": функция неявно удалена, так как базовый класс вызывает удаленную или недоступную функцию "std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)"
+          with
+          [
+              _Kty=pos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\type_traits(2424): note: "std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)": функция явно удалена
+          with
+          [
+              _Kty=pos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\unordered_map(132): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\desemond\source\repos\project2\project2\board.cpp(6): note: выполняется компиляция ссылки на экземпляр шаблон функции "std::unordered_map<pos,Cell,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::unordered_map(void)"
+          with
+          [
+              _Kty=pos,
+              _Ty=Cell
+          ]
+  c:\users\desemond\source\repos\project2\project2\board.h(10): note: выполняется компиляция ссылки на экземпляр шаблон класс "std::unordered_map<pos,Cell,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=pos,
+              _Ty=Cell
+          ]
